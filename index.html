@@ -2,15 +2,16 @@
 <html>
 <head>
 	<title>Rails + Javascript Engineer | Des Conlon</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<style>
 		.content {
-			width: 800px;
+			width: 80%;
 			margin: 0 auto;
 		}
 		.profiler {
-			width: 100px;
+			width: 80%;
 			margin-left: 15px;
 		}
 		.icon {
@@ -27,6 +28,20 @@
 			height: 100%;
 			width: 100%;
 			margin: 0 auto;
+			max-height: 120px;
+			max-width: 90px;
+		}
+		@media only screen and (max-device-width : 600px) {
+			.profbox {
+				display: none;
+			}
+			.sitelogo {
+				width: 40px;
+				margin-top: 15px;
+			}
+			.icon {
+				opacity: 1;
+			}
 		}
 	</style>
 	<link rel="icon" href="./images/favicon.png">
@@ -36,16 +51,16 @@
 		<br>
 		<br>
 		<div class="row">
-			<div class="col-md-2">
+			<div class="col-xs-2 profbox">
 			<!-- STORED: col-sm-offset-2 !-->
 				<img class="img-circle profiler center" src="./images/des_conlon.jpg" />
 			</div>
-			<div class="col-md-4">
+			<div class="col-xs-4">
 				<h2>Des Conlon</h2>
 				<h4 style="color: grey">Rails + Javascript Engineer</h4>
 			</div>
-			<div class="col-md-">
-				<a href="https://linkedin.com/in/desconlon" target="_blank"><img class="icon" title="Visit my LinkedIn profile" src="./images/linkedin.png">
+			<div class="col-xs-6">
+				<a href="https://linkedin.com/in/desconlon" target="_blank"><img class="icon" title="Visit my LinkedIn profile" src="./images/linkedin.png"></a>
 			</div>
 		</div>
 		<br>
@@ -56,16 +71,16 @@
 		<br>
 		<div class="site row">
 			<!-- Site logo !-->
-			<div class="col-md-2">
+			<div class="col-xs-2">
 				<img class="sitelogo" src="./images/sunsteal.png">
 			</div>
 			<!-- Title description !-->
-			<div class="col-md-7">
+			<div class="col-xs-7">
 				<a href="http://sunsteal.desconlon.com" target="_blank"><h3>Sun Steal</h3></a>
 				<h5 style="color: grey">Cheap sun holiday finder</h5>
 			</div>
 			<!-- Links? !-->
-			<div class="col-md-3">
+			<div class="col-xs-3">
 				<!--a href="http://sunsteal.desconlon.com" target="_blank"><img class="icon" title="Visit Sun Steal site" src="./images/mouse.png"></a!-->
 				<a href="https://medium.com/startupsco/8-things-i-learned-trying-to-change-british-sun-holidays-9db554388ef1" target="_blank"><img class="icon" title="Read coverage on Startups.co" src="./images/blog.png"></a>
 			</div>
@@ -73,16 +88,16 @@
 		<br><br><br>
 		<div class="site row">
 			<!-- Site logo !-->
-			<div class="col-md-2">
+			<div class="col-xs-2">
 				<img class="sitelogo" src="./images/bolohealth.png">
 			</div>
 			<!-- Title description !-->
-			<div class="col-md-7">
+			<div class="col-xs-7">
 				<a href="http://bolohealth.desconlon.com" target="_blank"><h3>BoloHealth</h3></a>
 				<h5 style="color: grey">Natural medicine data analytics</h5>
 			</div>
 			<!-- Links? !-->
-			<div class="col-md-3">
+			<div class="col-xs-3">
 				<!--a href="http://bolohealth.desconlon.com" target="_blank"><img class="icon" title="Visit BoloHealth site" src="./images/mouse.png"></a!-->
 				<a href="https://flippa.com/6993859-bolohealth-com" target="_blank"><img class="icon" title="Sold on Flippa" src="./images/sold.png"></a>
 			</div>
@@ -90,16 +105,16 @@
 		<br><br><br>
 		<div class="site row">
 			<!-- Site logo !-->
-			<div class="col-md-2">
-				<img class="sitelogo" style="height: 110px; width: 80px; margin-left: 10px;" src="./images/everyplay.png">
+			<div class="col-xs-2">
+				<img class="sitelogo" src="./images/everyplay.png">
 			</div>
 			<!-- Title description !-->
-			<div class="col-md-7">
+			<div class="col-xs-7">
 				<a href="http://everyplay.desconlon.com" target="_blank"><h3>everyplay</h3></a>
 				<h5 style="color: grey">Marketing education aggregator for hackers</h5>
 			</div>
 			<!-- Links? !-->
-			<div class="col-md-3">
+			<div class="col-xs-3">
 				<!--a href="http://everyplay.desconlon.com" target="_blank"><img class="icon" title="Visit everyplay site" src="./images/mouse.png"></a!-->
 				<a href="https://flippa.com/6993859-bolohealth-com" target="_blank"><img class="icon" title="Posted on Product Hunt" src="./images/blog.png"></a>
 			</div>
